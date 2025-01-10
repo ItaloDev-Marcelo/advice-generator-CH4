@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+
+:root {
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  font-size: 1.75em;
+  background: var(--Dark-Blue);
+  font-family: "Manrope", serif;
+}
+
+#desktop-img {
+  display: none;
+}
+
+
+#Ad--container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 350px;
+  min-height: 318px;
+  height: auto;
+  margin: 7em auto 0 auto; 
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 7px;
+  
+}
+
+#Advice-num {
+  font-size: .5em;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 2em;
+  color: var(--Neon-Green);
+}
+
+#Advice-quote {
+  font-size: 1em;
+  padding: 0 1em;
+  font-weight: 800;
+  color: var(--Light-Cyan);
+}
+
+#divider-line {
+  margin: 1em 0;
+}
+
+#Advice-content {
+  padding: 2em 0;
+}
+
+#dice--container {
+   position: absolute;
+   top: 90%;
+}
+
+#dice-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  background-color:  hsl(150, 100%, 66%);
+  border-radius: 45px;
+}
+
+#dice-btn:hover {
+  box-shadow: 8px 5px 95px 12px rgba(128,255,191,0.75);
+}
+
+#dice-btn:hover > img {
+  color: var(--Dark-Grayish-Blue)
+}
+
+#dice-btn > img {
+  color: var(--Grayish-Blue);
+}
+
+@media (min-width: 800px) {
+  #Ad--container {
+    width: 350px;
+    min-height: 318px;
+    height: auto;
+    margin: 2.5em auto 0 auto; 
+  }
+  
+  
+}
+
+@media (min-width: 960px) {
+  #Ad--container {
+    width: 555px;
+    min-height: 318px;
+    height: auto;
+    margin: 5.5em auto 0 auto; 
+  }
+
+  #Advice-quote {
+    font-size: 1.1em;
+    padding: 0 1.5em;
+  }
+  
+
+  #mobile-img {
+    display: none;
+  }
+
+  #desktop-img {
+    position: relative;
+    left: 10%;
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  #Advice-num {
+    font-size: .6em;
+  }
+
+
+  #Ad--container {
+    width: 555px;
+    min-height: 315px;
+    margin: 7.5em auto 0 auto; 
+  }
+
+  
+}
+
+@media (min-width: 1440px) {
+  #Ad--container {
+    width: 555px;
+    min-height: 315px;
+    margin: 7.5em auto 0 auto; 
+  }
+  
+}
