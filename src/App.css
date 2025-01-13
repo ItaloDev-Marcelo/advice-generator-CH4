@@ -120,7 +120,7 @@ body {
 
   #desktop-img {
     position: relative;
-    left: 10%;
+    left: 0;
     display: block;
   }
 }
