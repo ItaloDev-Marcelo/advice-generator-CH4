@@ -1,23 +1,24 @@
+import  DividerDesktop  from '../assets/images/pattern-divider-desktop.svg';
+import  DividerMobile from '../assets/images/pattern-divider-mobile.svg';
+import  Dice  from '../assets/images/icon-dice.svg';
+export default function AdviceSection({advice, id, hundleUpdateQuote}) {
 
-
-export default function Advice({advice, id, ImageMobile, ImageDesk, dice, hundleUpdateQuote}) {
-  
     return (
-        <div id="Ad--container">
+        <section id="Ad--container">
            <div id="Advice-content">
            <h1 id="Advice-num">Advice #{id}</h1>
             <p id="Advice-quote">“{advice}”</p>
-           <div id="divider-line">
-           <img src={ImageMobile} alt="" id="mobile-img"/>
-           <img src={ImageDesk} alt="" id="desktop-img"/>
-           </div>
+           <figure id="divider-line">
+           <img src={DividerMobile} alt='' id="mobile-img"/>
+           <img src={DividerDesktop} alt=''  id="desktop-img"/>
+           </figure>
            </div>
            <div id="dice--container">
            <button id="dice-btn" onClick={() =>  hundleUpdateQuote()}>
-           <img src={dice} alt="" id="dice"/>
+            <img src={Dice} alt='' />
            </button>
            </div>
-           </div>
+      </section>
     )
 
 } 
