@@ -3,7 +3,6 @@ import AdviceSection from '../components/Advice'
 const AdviceContent = () => {
    const [getError, setGetError] = useState(false);
    const [apiData, setApiData] = useState([]);
-  
      async function GetApiData() {
        try {
         setGetError(true)
